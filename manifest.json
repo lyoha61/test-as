@@ -1,0 +1,15 @@
+{
+	"code": "deals.list",
+	"version": "1.0.0",
+	"name": {
+		"ru": "Список дел"
+	},
+	"description": {
+		"ru": "Вывод списка сделок с фильтром по сумме"
+	},
+	"show_in_list": "Y",
+	"type": "client",
+	"auth": "Y",
+	"scope": ["crm"],
+	"start_url": "index.html"
+}
