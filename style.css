@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F9FAFB;
+	height: 100vh;
+	font-family: "Inter", sans-serif;
+}
+
+header {
+	display: flex;
+	background-color: #ffffff;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	height: 80%;
+}
+
+.app-title {
+	margin: 10px 30px;
+	font-size: 0.8rem;
+}
+
+.app-title h1 {
+	font-weight: 300;
+}
+
+.deals-container{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: auto;
+	background-color: #ffffff;
+	margin-top: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deals-container-title {
+	padding: 20px;
+}
+
+.deals-container-title h2 {
+	font-weight: 300;
+}
+
+.deals-container__filter {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	padding: 20px 20px 10px;
+	border: 1px solid #D1D5DB;
+	border-left: none;
+	border-right: none;
+}
+
+.deals-container__filter button {
+	background-color: #ffffff;
+	border: 1px solid #D1D5DB;
+	border-radius: 10px;
+	padding: 8px 20px;
+	color: #374151;
+
+	cursor: pointer;
+}
+
+.deals-container__filter-input {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.deals-container__filter-input label {
+	font-size: 0.9rem;
+	position: absolute;
+	top: -18px;
+	left: 5px;
+}
+
+.deals-container__filter-input input {
+	padding: 5px 10px;
+	border: 1px solid #D1D5DB;
+	border-radius: 10px;
+}
+
+.deals-container__filter-input input:focus {
+	outline: none;
+}
+
+.deals-table-container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+.deals-table-container::-webkit-scrollbar{
+	display: none; 
+}
+
+table {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	overflow: auto;
+}
+
+thead tr {
+	background-color: #F9FAFB;
+}
+
+thead th {
+	text-align: start;
+	color: #6B7280;
+	padding: 10px 20px
+}
+
+tbody td {
+	padding: 20px 20px;
+	border: 1px solid #F3F4F6;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #F9FAFB;
+}
+
+.deals-container-footer {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #D1D5DB;
+	height: 10%;
+	width: 100%;
+	padding: 0px 20px 0px;
+}

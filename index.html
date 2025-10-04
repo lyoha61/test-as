@@ -4,27 +4,51 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Список сделок</title>
+	<link rel="stylesheet" href="style.css">
 	<script src="https://api.bitrix24.com/api/v1/"></script>
-	<script src="main.js"></script>
+	<script src="main.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h2>Список сделок</h2>
-	<label for="min-sum">Минимальная сумма:</label>
-	<input type="number" id="min-sum" placeholder="0">
-	<button id="show-deals">Показать</button>
+	<header>
+		<div class="app-title">
+			<h1>CRM Dashboard</h1>
+		</div>
+	</header>
+	<main>
+		<div class="deals-container">
+			<div class="deals-container-title">
+				<h2>Список сделок</h2>
+			</div>
+			<div class="deals-container__filter">
+				<div class="deals-container__filter-input">
+					<label for="min-sum">Минимальная сумма:</label>
+					<input type="number" id="min-sum" placeholder="0">
+				</div>
+				<button id="show-deals">Показать</button>
+			</div>
 
-	<table id="deals-table">
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Название</th>
-				<th>Сумма</th>
-			</tr>
-		</thead>
+			<div class="deals-table-container">
+				<table id="deals-table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Название</th>
+							<th>Сумма</th>
+						</tr>
+					</thead>
+					
+					<tbody>
 		
-		<tbody>
-
-		</tbody>
-	</table>
+					</tbody>
+				</table>
+			</div>
+			<div class="deals-container-footer">
+				<p>Всего <span id="total-leads">0</span></p> 
+			</div>
+		</div>
+	</main>
 </body>
 </html>
